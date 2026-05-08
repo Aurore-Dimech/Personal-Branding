@@ -1,6 +1,4 @@
 <script lang="ts">
-    import linkedIn from '$lib/assets/icons/linkedin.png';
-	import gitHub from '$lib/assets/icons/gitHub.png';
     import { ArrowUp, Mail, Phone } from '@lucide/svelte';
     import { mainLinks } from '$lib/assets/sitemap';
     import {MediaQuery} from "svelte/reactivity";
@@ -14,12 +12,12 @@
     const socialMedias = [
         {
             url: "https://github.com/Aurore-Dimech",
-            src: gitHub,
+            src: "/icons/github.png",
             alt: "GitHub",
         },
         {
             url: "https://www.linkedin.com/in/aurore-dimech",
-            src: linkedIn,
+            src: "/icons/linkedin.png",
             alt: "LinkedIn",
         },
     ]
