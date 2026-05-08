@@ -3,6 +3,7 @@
     import type {Snippet} from "svelte";
     import {cn} from "$lib/utils";
     import { page } from '$app/state';
+    import {resolve} from "$app/paths"
     // import {faPaw} from "@fortawesome/free-solid-svg-icons";
     // import {Fa} from "svelte-fa";
 
@@ -16,7 +17,7 @@
     const url = $derived(page.url.pathname)
 
     function isActive() {
-        if (other.href === "/") return url === "/";
+        if (other.href === "/") return url === resolve("/");
         return url.startsWith(other.href!);
     }
 

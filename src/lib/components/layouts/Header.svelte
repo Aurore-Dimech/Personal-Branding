@@ -7,6 +7,7 @@
     import favicon from '$lib/assets/logo.svg';
     import { mainLinks } from '$lib/assets/sitemap';
     import Link from '$lib/components/layouts/nav/Link.svelte';
+	import { resolve } from "$app/paths";
 
     const isBurgerOpen = $derived(!!page.state.burgerOpen);
 
@@ -71,7 +72,7 @@
                 <SheetContent side="left">
                     <SheetHeader>
                         <SheetTitle>
-                            <a href="/" class="inline-block w-fit outline-none transition-all hover:ring-3 hover:border-ring hover:ring-ring/50 focus-visible:ring-3 border border-transparent bg-clip-padding focus-visible:border-ring focus-visible:ring-ring/50 p-1 rounded-sm" aria-label="Go to homepage">
+                            <a href={resolve("/")} class="inline-block w-fit outline-none transition-all hover:ring-3 hover:border-ring hover:ring-ring/50 focus-visible:ring-3 border border-transparent bg-clip-padding focus-visible:border-ring focus-visible:ring-ring/50 p-1 rounded-sm" aria-label="Go to homepage">
                                 <img src={favicon} width="100" alt="Logo Aurore D.">
                             </a>
                         </SheetTitle>
@@ -88,7 +89,7 @@
             </Sheet>
         {/if}
 
-        <a href="/" aria-label="Go to homepage" class="hover:ring-3 hover:border-ring hover:ring-ring/50 outline-none transition-all focus-visible:ring-3 border border-transparent bg-clip-padding focus-visible:border-ring focus-visible:ring-ring/50 p-1 rounded-sm">
+        <a href={resolve("/")} aria-label="Go to homepage" class="hover:ring-3 hover:border-ring hover:ring-ring/50 outline-none transition-all focus-visible:ring-3 border border-transparent bg-clip-padding focus-visible:border-ring focus-visible:ring-ring/50 p-1 rounded-sm">
             <img src={favicon} width="36" alt="Logo Aurore D">
         </a>
 

@@ -18,7 +18,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: "https://aurore-dimech.github.io/Personal-Branding"
+			base: process.env.BASE_PATH || ''
 		}
 	}
 };
