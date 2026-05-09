@@ -1,14 +1,16 @@
+import { resolve } from "$app/paths";
+
 export const mainLinks = [
 		{
-			url: "/projects",
+			url: resolve("/projects"),
 			name: "Projects"
 		},
 		{
-			url: "/certifications",
+			url: resolve("/certifications"),
 			name: "Certifications"
 		},
 		{
-			url: "/me",
+			url: resolve("/me"),
 			name: "Learn more about me"
 		},
 	]
