@@ -2,6 +2,7 @@
     import { ArrowUp, Mail, Phone } from '@lucide/svelte';
     import { mainLinks } from '$lib/assets/sitemap';
     import {MediaQuery} from "svelte/reactivity";
+	import { base } from '$app/paths';
 
     interface socialMediaType {
         url: string,
@@ -12,12 +13,12 @@
     const socialMedias = [
         {
             url: "https://github.com/Aurore-Dimech",
-            src: "/icons/github.png",
+            src: `${base}/icons/github.png`,
             alt: "GitHub",
         },
         {
             url: "https://www.linkedin.com/in/aurore-dimech",
-            src: "/icons/linkedin.png",
+            src: `${base}/icons/linkedin.png`,
             alt: "LinkedIn",
         },
     ]

@@ -2,6 +2,7 @@
 	import Breadcrumb from "$lib/components/layouts/Breadcrumb.svelte";
     import point from "$lib/assets/point.svg"
 	import TextLink from "$lib/components/TextLink/TextLink.svelte";
+	import { base, resolve } from "$app/paths";
 </script>
 
 <Breadcrumb page={"Home"} />
@@ -53,7 +54,7 @@
                 </a>
             </div>
         </div>
-        <img src="/me.jpg" alt="" class="mx-auto md:mx-0 w-full sm:w-1/3 max-w-2xs object-contain object-top -order-1 sm:order-last" />
+        <img src={`${base}/me.jpg`} alt="" class="mx-auto md:mx-0 w-full sm:w-1/3 max-w-2xs object-contain object-top -order-1 sm:order-last" />
     </div>
 </section>
 

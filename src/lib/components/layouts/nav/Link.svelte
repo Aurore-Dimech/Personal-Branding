@@ -4,8 +4,6 @@
     import {cn} from "$lib/utils";
     import { page } from '$app/state';
     import {resolve} from "$app/paths"
-    // import {faPaw} from "@fortawesome/free-solid-svg-icons";
-    // import {Fa} from "svelte-fa";
 
     interface Props extends ButtonProps {
         children: Snippet

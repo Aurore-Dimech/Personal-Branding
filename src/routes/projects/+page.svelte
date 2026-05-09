@@ -2,6 +2,7 @@
 	import Breadcrumb from '$lib/components/layouts/Breadcrumb.svelte';
 	import Timeline from '$lib/components/Timeline/Timeline.svelte';
 	import TextLink from '$lib/components/TextLink/TextLink.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <Breadcrumb page={'Projects'} />
@@ -220,7 +221,7 @@
 				<li>
 					Conducted thorough interviews with a variety of profiles
 				</li>
-				<li>Used scientific methods to analyse qualitative data and wrote a <TextLink href="/research/Evolution_des_relations_au_travail_et_du_sentiment_subjectif_defficacite_avec_le_teletravail.pdf">scientific article</TextLink> based on a bibliography</li>
+				<li>Used scientific methods to analyse qualitative data and wrote a <TextLink href={`${base}/research/Evolution_des_relations_au_travail_et_du_sentiment_subjectif_defficacite_avec_le_teletravail.pdf`}>scientific article</TextLink> based on a bibliography</li>
 			</ul>
 		{/snippet}
 	</Timeline>
@@ -249,7 +250,7 @@
 				<li>
 					Created a valid online survey and gathered more than 200 answers
 				</li>
-				<li>Wrote a <TextLink href="/research/LES_EFFETS_RS_SUR_LESTIME_DE_SOI_ET_LA_REPRESENTATION_DU_CORPS_CHEZ_LES_HOMMES.pdf">scientific article</TextLink> using our conclusions and a detailed bibliography</li>
+				<li>Wrote a <TextLink href={`${base}/research/LES_EFFETS_RS_SUR_LESTIME_DE_SOI_ET_LA_REPRESENTATION_DU_CORPS_CHEZ_LES_HOMMES.pdf`}>scientific article</TextLink> using our conclusions and a detailed bibliography</li>
 			</ul>
 		{/snippet}
 	</Timeline>
