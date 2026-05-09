@@ -8,6 +8,7 @@
     import { mainLinks } from '$lib/assets/sitemap';
     import Link from '$lib/components/layouts/nav/Link.svelte';
 	import { resolve } from "$app/paths";
+	import ContactButton from "../ContactButton/ContactButton.svelte";
 
     const isBurgerOpen = $derived(!!page.state.burgerOpen);
 
@@ -28,14 +29,7 @@
 			<Link href={link.url}>{link.name}</Link>
 		{/each}
 		<li>
-			<div class="rounded-full p-1 border border-ring/70 bg-ring/30 group hover:bg-black focus-within:bg-black transition-all">
-                <a
-                    href="mailto:aurore.dimech@edu.devinci.fr"
-                    class="block rounded-full px-4 py-2 min-h-fit border border-black bg-white font-medium group-hover:underline group-focus:underline group-focus-within:underline focus-visible:outline-0 underline-offset-4 outline-0 text-base md:text-lg"
-                >
-                    Contact me!
-                </a>
-			</div>
+			<ContactButton />
 		</li>
 	</ul>
 	

@@ -17,7 +17,7 @@
     }: TimelineProps = $props()
 </script>
 
-<div class="flex flex-col gap-4 pb-4">
+<div class="flex flex-col gap-4 pb-4 max-w-full">
 
     <div>
         <div class="flex items-center gap-2">
@@ -30,12 +30,12 @@
         <p class="block md:hidden shrink-0 pl-12">{@render dates()}</p>
     </div>
 
-	<div class="flex gap-2 items-stretch">
+	<div class="flex gap-2 items-stretch grow">
 		<div class="w-10 shrink-0 md:w-12">
 			<div class="h-full border-l-2 border-dashed border-ring/30 mx-auto w-0"></div>
 		</div>
 
-		<div>
+		<div class="max-w-full min-w-0">
             <div class="flex gap-2 pb-4 flex-wrap">
                 {@render tags()}
             </div>

@@ -11,6 +11,6 @@ export const mainLinks = [
 		},
 		{
 			url: resolve("/me"),
-			name: "Learn more about me"
+			name: "About me"
 		},
 	]

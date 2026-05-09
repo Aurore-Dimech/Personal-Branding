@@ -1,18 +1,49 @@
-<script>
+<script lang="ts">
 	import Breadcrumb from '$lib/components/layouts/Breadcrumb.svelte';
 	import Timeline from '$lib/components/Timeline/Timeline.svelte';
 	import TextLink from '$lib/components/TextLink/TextLink.svelte';
 	import { base } from '$app/paths';
+	import Hero from '$lib/components/layouts/hero/Hero.svelte';
+
+	interface ProjectCardsProps {
+		link: string
+		name: string
+		tags:string[]
+		src: string
+	}
 </script>
 
-<Breadcrumb page={'Projects'} />
+{#snippet ProjectCards({link, name, tags, src}: ProjectCardsProps)}
+	<a class="overflow-hidden grow md:flex-1 min-w-0 md:min-w-54 rounded-md border border-black group outline-ring focus:outline-4 focus-within:focus:outline-4 focus:shadow-xl hover:shadow-xl basis-48 max-w-64 sm:max-w-1/2" href={link} target="_blank" >			
+		<h4 class="sr-only">{name}</h4>
 
-<section class="mx-auto flex flex-col items-center gap-3 py-8 md:px-20 md:py-12">
-	<h1 class="text-center font-italiana text-4xl md:text-6xl">Projects</h1>
-	<p class="text-center">
+		<div class="relative ">
+			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-l from-transparent from-90% to-95% to-white pointer-events-none"></div>
+				<div class="flex gap-1 pb-2 p-4 overflow-x-scroll no-scrollbar ">
+						{#each tags as tag}
+							<div class="w-fit rounded-full border border-black px-2 py-0.5 shrink-0">
+								<p class="text-xs md:text-sm">{tag}</p>
+							</div>
+						{/each}
+				</div>
+			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-r from-transparent from-90% to-95% to-white pointer-events-none"></div>
+		</div>
+		<div class="relative overflow-hidden rounded-t-md m-4">
+			<img src={src} alt="" class="aspect-square object-cover object-top transition group-focus-within:scale-110 group-hover:scale-110" />
+			<div class="absolute pointer-events-none top-0 left-0 w-full h-full bg-linear-to-b from-transparent from-45% to-95% to-white"></div>
+		</div>
+
+		<p class="text-center pt-2 order-3 p-4 ">
+			<TextLink>{name}</TextLink>
+		</p>
+	</a>
+{/snippet}
+
+<Hero>
+	{#snippet description()}
 		I gained a lot of experience throughout my school years and thank to my apprenticeships, during which I had the opportunity to participate in various projects.
-	</p>
-</section>
+	{/snippet}
+</Hero>
 
 <section class="py-6 md:py-10 border-t border-ring-50 ">
     <h2 class="font-italiana text-2xl md:text-4xl pb-4 md:pb-6">Work projects</h2>
@@ -42,8 +73,10 @@
 			</ul>
 			<br>
 
-			<div>
-				
+			<div class="flex flex-wrap justify-center gap-4 items-stretch w-full max-w-full">
+				{@render ProjectCards({link: "https://health.nuzzly.fr/", name: "Nuzzly Health", tags: ["Svelte","SvelteKit", "Tailwind CSS", "Laravel"], src: `${base}/captures/NuzzlyHealth.png`})}
+				{@render ProjectCards({link: "https://prezode-initiative.org/fr/", name: "PREZODE", tags: ["Wordpress", "Tailwind CSS"], src: `${base}/captures/Prezode.png`})}
+				{@render ProjectCards({link: "https://pleinia.com/", name: "Pleinia", tags: ["Vue.js", "Tailwind CSS", "Laravel", "Filament"], src: `${base}/captures/Pleinia.png`})}
 			</div>
 		{/snippet}
 	</Timeline>
@@ -72,6 +105,12 @@
 				<li>Updated WordPress projects to build reusable personalized components for clients’ pages</li>
 			</ul>
 			<br>
+
+			<div class="flex flex-wrap justify-center gap-4 items-stretch">
+				{@render ProjectCards({link: "https://flair-agence.com/", name: "Flair agency", tags: ["Wordpress", "Bootstrap"], src: `${base}/captures/Flair.png`})}
+				{@render ProjectCards({link: "https://nuzzly.fr/", name: "Nuzzly", tags: ["Svelte", "SvelteKit", "Laravel", "Filament"], src: `${base}/captures/Nuzzly.png`})}
+				{@render ProjectCards({link: "https://www.no-mad.fr/", name: "No Mad", tags: ["Svelte", "Tailwind CSS"], src: `${base}/captures/Nomad.png`})}
+			</div>
 		{/snippet}
 	</Timeline>
 

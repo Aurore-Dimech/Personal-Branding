@@ -1,17 +1,18 @@
 <script>
 	import Breadcrumb from "$lib/components/layouts/Breadcrumb.svelte";
+	import TextLink from "$lib/components/TextLink/TextLink.svelte";
 	import Timeline from "$lib/components/Timeline/Timeline.svelte";
-
+	import point from "$lib/assets/point.svg"
+	import { base } from "$app/paths";
+	import Hero from "$lib/components/layouts/hero/Hero.svelte";
+	
 </script>
 
-<Breadcrumb page={"Learn more about me"} />
-
-<section class="mx-auto flex flex-col items-center gap-3 py-8 md:px-20 md:py-12">
-	<h1 class="text-center font-italiana text-4xl md:text-6xl">Learn more about me</h1>
-	<p class="text-center">
-		//
-	</p>
-</section>
+<Hero>
+	{#snippet description()}
+		My education and my work experience taught me a lot of skills and competences. However, some of them also come from other activities I do in my free time !
+	{/snippet}
+</Hero>
 
 <section class="py-6 md:py-10 border-t border-ring-50 ">
     <h2 class="font-italiana text-2xl md:text-4xl pb-4 md:pb-6">Sports</h2>
@@ -28,8 +29,46 @@
 <section class="py-6 md:py-10 border-t border-ring-50 ">
     <h2 class="font-italiana text-2xl md:text-4xl pb-4 md:pb-6">Hobbies</h2>
 
-	<h3 class="font-italiana text-lg md:text-2xl">Reading</h3>
-	<h3 class="font-italiana text-lg md:text-2xl">Manual activities</h3>
+	<div class="flex flex-col gap-2">
+        <div>
+            <div class="flex items-center gap-2">
+                <img src={point} alt="" class="size-6 md:size-8"/>
+                <h3 class="font-italiana text-lg md:text-2xl">Reading</h3>
+            </div>
+			<div class="py-4 flex flex-col gap-1.5">
+				<p>Reading is one of my favorite activities since I was a child.</p>
+				<p>At first, I tended to mainly go towards <span class="font-semibold">fantasy</span>. From then I made my way slowly towards other genres, such as <span class="font-semibold">romance, classic Literature, novels and essays</span>. Nowadays, in addition to my other reading material, I quite often read <span class="font-semibold">scientific articles</span> on websites such as <TextLink href='https://pubmed.ncbi.nlm.nih.gov/'>PubMed</TextLink>.</p>
+				<p>I read mostly in <span class="font-semibold">English and French</span>. At the moment, my favorite novel is <span class="font-semibold">Pride and Prejudice by Jane Austen</span> and my favorite series is <span class="font-semibold">A Chorus of Dragons by Jenn Lyons</span>.</p>
+			</div>
+		</div>
+        <div>
+            <div class="flex items-center gap-2">
+                <img src={point} alt="" class="size-6 md:size-8"/>
+                <h3 class="font-italiana text-lg md:text-2xl">Manual & artistic activities</h3>
+            </div>
+			<div class="py-4 flex flex-col gap-4">
+				<div>
+					<p class="pb-1.5">As stated in my soft skills, I am a creative person at heart. I've mainly been <span class="font-semibold">dancing and drawing</span> for years, but I like to try a lot of different mediums. For example, I have done some <span class="font-semibold">painting, sewing, wood carving, wire sculpture, or even linocuts</span>.</p>
+					<p>My recent passions are <span class="font-semibold">weaving alpha patterns, knitting, and crocheting</span>.</p>
+				</div>
+
+				<div class="flex flex-wrap gap-4 items-center justify-center">
+					<div class="flex justify-center grow flex-1 min-w-54 max-w-95">
+						<img src={`${base}/arts/alpha.png`} alt="weaved bracelet with a drawing of a torch in it" class="object-center object-cover" />
+					</div>
+					<div class="flex justify-center grow flex-1 min-w-54 max-w-95">
+						<img src={`${base}/arts/litho.jpg`} alt="linocut of a simple character in the light" class="object-center object-cover" />
+					</div>
+					<div class="flex justify-center grow flex-1 min-w-54 max-w-95">
+						<img src={`${base}/arts/crochet.jpg`} alt="a crocheted rose" class="object-center object-cover" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
 </section>
 
 <section class="py-6 md:py-10 border-t border-ring-50 ">

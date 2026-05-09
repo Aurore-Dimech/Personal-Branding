@@ -3,6 +3,7 @@
     import point from "$lib/assets/point.svg"
 	import TextLink from "$lib/components/TextLink/TextLink.svelte";
 	import { base, resolve } from "$app/paths";
+	import ContactButton from "$lib/components/ContactButton/ContactButton.svelte";
 </script>
 
 <Breadcrumb page={"Home"} />
@@ -28,14 +29,7 @@
         Hello there! I’m Aurore, a full stack developer who specializes in digital accessibility, especially to improve the experience of blind people. I work with public and private institutions and companies such as <TextLink href="https://grauw.fr/">GRAUW.</TextLink>  to ensure that everyone can use the websites and applications they could need or want.
     </p>
 
-    <div class="rounded-full p-1 border border-ring/70 bg-ring/30 group hover:bg-black focus-within:bg-black transition-all">
-        <a
-            href="mailto:aurore.dimech@edu.devinci.fr"
-            class="block rounded-full px-4 py-2 border border-black bg-white group-hover:underline group-focus:underline group-focus-within:underline focus-visible:outline-0 underline-offset-4 outline-0 text-base md:text-lg"
-        >
-            Contact me!
-        </a>
-    </div>
+    <ContactButton />
 </section>
 
 <section class="py-6 md:py-10 border-t border-ring-50 ">
@@ -45,14 +39,7 @@
             <p>My name is Aurore, and I am a 23-year-old web developer specialized in backend development and digital accessibility. <br> My goal is to help create and upgrade websites and applications in order to optimize them and make them more user-friendly.</p>
             <p>I am currently employed as a Full Stack Developer Apprentice at <TextLink href="https://grauw.fr/">GRAUW.</TextLink> while pursuing a Master's Degree in Web Engineering and Digital Innovation.</p>
             <p>Let's work together in the near future!</p>
-            <div class="rounded-full p-1 border border-ring/70 bg-ring/30 group hover:bg-black focus-within:bg-black transition-all mx-auto">
-                <a
-                    href="mailto:aurore.dimech@edu.devinci.fr"
-                    class="block rounded-full px-4 py-2 border border-black bg-white group-hover:underline group-focus:underline group-focus-within:underline focus-visible:outline-0 underline-offset-4 outline-0 text-base md:text-lg"
-                >
-                    Contact me!
-                </a>
-            </div>
+            <ContactButton class="mx-auto" />
         </div>
         <img src={`${base}/me.jpg`} alt="" class="mx-auto md:mx-0 w-full sm:w-1/3 max-w-2xs object-contain object-top -order-1 sm:order-last" />
     </div>
