@@ -18,15 +18,15 @@
 		<h4 class="sr-only">{name}</h4>
 
 		<div class="relative ">
-			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-l from-transparent from-90% to-95% to-white pointer-events-none"></div>
-				<div class="flex gap-1 pb-2 p-4 overflow-x-scroll no-scrollbar ">
+			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-l from-transparent from-91% to-97% to-white pointer-events-none"></div>
+				<div class="flex gap-1 pb-2 py-4 px-5 overflow-x-scroll no-scrollbar ">
 						{#each tags as tag}
 							<div class="w-fit rounded-full border border-black px-2 py-0.5 shrink-0">
 								<p class="text-xs md:text-sm">{tag}</p>
 							</div>
 						{/each}
 				</div>
-			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-r from-transparent from-90% to-95% to-white pointer-events-none"></div>
+			<div class="absolute top-0 left-0 w-full h-full bg-linear-to-r from-transparent from-91% to-97% to-white pointer-events-none"></div>
 		</div>
 		<div class="relative overflow-hidden rounded-t-md m-4">
 			<img src={src} alt="" class="aspect-square object-cover object-top transition group-focus-within:scale-110 group-hover:scale-110" />
