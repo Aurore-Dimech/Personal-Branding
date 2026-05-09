@@ -101,12 +101,12 @@
             <p> At the moment, I:</p>
             <ul class="list-disc list-inside">
                 <li>am <span class="font-semibold">native French speaker</span></li>
-                <li>have a level <span class="font-semibold">C1 in English</span> (TOEFL 2023)</li>
+                <li>have a level <span class="font-semibold">C1 in English</span> (TOEFL 2023 ; scored 660 points)</li>
                 <li>have a <span class="font-semibold">conversational Spanish</span>.</li>
             </ul>
         </div>
     
-        <p>I maintain those levels by <span class="font-semibold">reading and watching works in foreign languages</span>, and by doing various <span class="font-semibold">trips abroad </span>in countries such as the United Kingdom or Spain.</p>
+        <p>I maintain those levels by <span class="font-semibold">reading and watching content in foreign languages</span>, and by doing various <span class="font-semibold">trips abroad </span> in countries such as the United Kingdom or Spain.</p>
     
         <p>I plan to expand my knowledge by learning the <span class="font-semibold">French and British Sign Languages</span>, and by improving my Spanish abilities.</p>
     </div>

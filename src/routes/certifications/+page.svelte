@@ -70,13 +70,13 @@
 				<li>Agile Methodologies | </li>
 				<li>UX/UI Design | </li>
 				<li>Networking | </li>
-				<li>AI | </li>
+				<li>AI</li>
 			</ul>
 			<p>
 				Majored in Web Development and Digital Innovations
 			</p>
 			<p>
-				Majored with highest honors and was the valedictorian
+				Graduated with highest honors and was the valedictorian
 			</p>
 		{/snippet}
 	</Timeline>
@@ -105,13 +105,13 @@
 				<li>Clinical Psychology | </li>
 				<li>Scientific Research | </li>
 				<li>Neuropsychology | </li>
-				<li>Gerontology | </li>
+				<li>Gerontology</li>
 			</ul>
 			<p>
 				Majored in Neurosciences and Psychosocial Risks
 			</p>
 			<p>
-				Majored with highest honors and was the valedictorian
+				Graduated with highest honors and was the valedictorian
 			</p>
 		{/snippet}
 	</Timeline>
@@ -137,7 +137,7 @@
 				<li>Online communication | </li>
 				<li>Digital creation | </li>
 				<li>Cybersecurity | </li>
-				<li>Digital environment | </li>
+				<li>Digital environment</li>
 			</ul>
 			<p>
 				Was deemed "advanced level 1" with a score of 595
@@ -166,7 +166,7 @@
 				Majored in Cinema and Audiovisual
 			</p>
 			<p>
-				Majored with highest honors
+				Graduated with highest honors
 			</p>
 		{/snippet}
 	</Timeline>

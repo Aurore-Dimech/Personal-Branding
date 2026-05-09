@@ -23,7 +23,7 @@
 		<li>Occasional practice of fitness</li>
 	</ul>
 
-	<p>Ballet and karate are two sports that I practiced daily and competed in for more than 10 years. Even though I stopped some time ago, I am interested in going back to those in the near future.</p>
+	<p>Ballet and karate are two sports that I practiced weekly and competed in for more than 10 years. Even though I stopped some time ago, I am interested in going back to those in the near future.</p>
 </section>
 
 <section class="py-6 md:py-10 border-t border-ring-50 ">

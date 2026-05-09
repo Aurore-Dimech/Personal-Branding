@@ -163,7 +163,7 @@
 		{#snippet content()}
 			<ul class="list-disc pl-4">
 				<li>
-					Created a <TextLink href="https://patientvoice-frontend.onrender.com/">website</TextLink> back aiming to facilitate the experience of the clients of functional rehabilitation centers
+					Created a <TextLink href="https://patientvoice-frontend.onrender.com/">website</TextLink> aiming to facilitate the experience of the clients of functional rehabilitation centers
 				</li>
 				<li>
 					Designed and developed a relevant solution by analyzing the clients' needs
