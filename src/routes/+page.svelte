@@ -93,19 +93,21 @@
     </div>
 </section>
 
-<section class="py-6 md:py-10 border-t border-ring-50 flex flex-col sm:flex-row gap-10 md:gap-12 justify-between items-center">
-    <div class="flex flex-col justify-between gap-2 md:gap-6">
-        <h2 class="font-italiana text-2xl md:text-4xl pb-4 md:pb-0">CV</h2>
-
-        <div class="pb-4 md:pb-0">
-            <p>Learn more about my skills, my experience, past projects, and education by looking at my CV!</p>
-            <p class="pb-4">Check my <TextLink href={`${base}/AuroreDIMECH_CV.pdf`}>CV</TextLink> and see if I could be a good fit for your projects ! </p>
-            <p>Don't hesitate to reach out if you have any question!</p>
+<section class="py-6 md:py-10 border-t border-ring-50 flex flex-col sm:flex-row gap-10 md:gap-12 justify-between items-stretch">
+    <div class="flex flex-col justify-between gap-2 md:gap-6 grow">
+        <div>
+            <h2 class="font-italiana text-2xl md:text-4xl pb-4 md:pb-6">CV</h2>
+    
+            <div class="pb-4 md:pb-0">
+                <p>Learn more about my skills, my experience, past projects, and education by looking at my CV!</p>
+                <p class="pb-4">Check my <TextLink href={`${base}/AuroreDIMECH_CV.pdf`}>CV</TextLink> and see if I could be a good fit for your projects ! </p>
+                <p>Don't hesitate to reach out if you have any question!</p>
+            </div>
         </div>
         
         <ContactButton class="mx-auto w-fit" />
     </div>
-    <a href={`${base}/AuroreDIMECH_CV.pdf`} target="_blank" class="border rounded-md border-ring p-4 shrink w-fit mx-auto sm:mx-0">
+    <a href={`${base}/AuroreDIMECH_CV.pdf`} target="_blank" class="border rounded-md border-ring p-4 shrink w-fit mx-auto sm:mx-0 h-fit my-auto">
     <img src={`${base}/CV.png`} alt="" class="md:mx-0 h-full object-contain object-center sm:max-h-64 max-h-88" />
     </a>
 </section>
