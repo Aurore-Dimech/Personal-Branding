@@ -9,7 +9,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<div class="flex h-screen w-screen flex-col font-montserrat" id="top">
+<div class="flex min-h-screen flex-col font-montserrat" id="top">
 	<Header />
 
 	<main

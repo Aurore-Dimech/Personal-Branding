@@ -40,7 +40,7 @@
     </a>
 </div>
 
-<footer id="footer" class="text-sm md:text-base w-screen px-6 sm:px-10 md:px-12 py-5 md:py-6 flex justify-between border-t border-ring/70  shrink-0 overflow-hidden bg-white gap-6 flex-wrap">
+<footer id="footer" class="text-sm md:text-base px-6 sm:px-10 md:px-12 py-5 md:py-6 flex justify-between border-t border-ring/70  shrink-0 overflow-hidden bg-white gap-6 flex-wrap">
 
     <div class="flex flex-col">
         <h2 class="font-italiana text-lg md:text-2xl pb-1">Site map:</h2>
